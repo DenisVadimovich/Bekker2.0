@@ -1,6 +1,7 @@
 ﻿//Файл landlord.cpp содержит все определения методов
 #include <iostream>
 #include "interface.h"
+#include "func.h"
 UserInterface::UserInterface()
 {
 
@@ -21,7 +22,7 @@ cin >> ch;
 switch (ch)
 {
 case 'a':
-
+Auth();
 break;
 case 'd':
 
