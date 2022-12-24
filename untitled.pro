@@ -6,12 +6,14 @@ CONFIG -= qt
 SOURCES += \
     interface.cpp \
     bekkerapp.cpp \
-    function.cpp
+    function.cpp \
+    class.cpp
 
 include(deployment.pri)
 qtcAddDeployment()
 
 HEADERS += \
     interface.h \
-    func.h
+    func.h \
+    class.h
 
