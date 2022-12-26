@@ -2,7 +2,7 @@
 #define FUNC
 #include <string>
 
-void Auth();
+int Auth();
 void Check();
 
 #endif // FUNC
