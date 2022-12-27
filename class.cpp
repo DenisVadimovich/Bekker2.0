@@ -18,6 +18,10 @@ Boss::~Boss(){
 
 }
 void Casir::CasirMenu(){
+    string line;
+     int a;
+     tochka:
+    system("cls");
     cout << "Sales Menu" << endl;
     cout << "1. Add a product" << endl;
     cout << "2. Delete product" << endl;
@@ -27,29 +31,245 @@ void Casir::CasirMenu(){
     cin >> Choice;
     switch (Choice){
     case 1:
+        tochka2:
         system("cls");
         cout << "Choose the type of product" << endl;
         cout << "1. Cake" << endl;
         cout << "2. Bun" << endl;
         cout << "3. Drink" << endl;
+        cout << "4. Exit" << endl;
         cout << "Choice: ";
+        cin >> Choice;
         switch(Choice){
             case 1:
-            //Работа с файлами
-            break;
-            case 2:
-            //Работа с файлами
-            break;
-            case 3:
-            //Работа с файлами
+            system("cls");
+        {
+            ifstream in("C:\\BekkerFinal\\Cake.txt"); // окрываем файл для чтения
+            if (in.is_open())
+            {
+            while (getline(in, line))
+            {
+            cout << line << endl;
+            }
+            }
+            else {
+            cout << "error";
+            }
+            in.close(); // закрываем файл
+            cout << "Choice: ";
+            cin >> (a);
+            if (a == 1){
+    ofstream rec;
+    rec.open("C:\\Prov\\Order.txt", ios::app);
+    if (rec.is_open())
+    {
+       rec << "Snickers_Cake" << " 212 Rub"<< endl;
+    }
+    else
+        cout << "error";
+            }
+            if (a == 2){
+    ofstream rec;
+    rec.open("C:\\Prov\\Order.txt", ios::app);
+    if (rec.is_open())
+    {
+       rec << "Napoleon_Cake" << " 240 Rub"<< endl;
+    }
+    else
+        cout << "error";
+            }
+            if (a == 3){
+    ofstream rec;
+    rec.open("C:\\Prov\\Order.txt", ios::app);
+    if (rec.is_open())
+    {
+       rec << "Cheese_Cake" << " 570 Rub"<< endl;
+    }
+    else
+        cout << "error";
+            }
+            if (a == 4){
+    ofstream rec;
+    rec.open("C:\\Prov\\Order.txt", ios::app);
+    if (rec.is_open())
+    {
+       rec << "Sour_Cream_Cake" << " 164 Rub"<< endl;
+    }
+    else
+        cout << "error";
+            }
+            goto tochka2;
             break;
         }
+            case 2:
+            system("cls");
+        {
+            ifstream in("C:\\BekkerFinal\\Bun.txt"); // окрываем файл для чтения
+            if (in.is_open())
+            {
+            while (getline(in, line))
+            {
+            cout << line << endl;
+            }
+            }
+            else {
+            cout << "error";
+            }
+            in.close(); // закрываем файл
+            cout << "Choice: ";
+            cin >> (a);
+            if (a == 1){
+    ofstream rec;
+    rec.open("C:\\Prov\\Order.txt", ios::app);
+    if (rec.is_open())
+    {
+       rec << "Sausage_In_The_Dough" << " 40 Rub"<< endl;
+    }
+    else
+        cout << "error";
+            }
+            if (a == 2){
+    ofstream rec;
+    rec.open("C:\\Prov\\Order.txt", ios::app);
+    if (rec.is_open())
+    {
+       rec << "Pizza_Application" << " 25 Rub"<< endl;
+    }
+    else
+        cout << "error";
+            }
+            if (a == 3){
+    ofstream rec;
+    rec.open("C:\\Prov\\Order.txt", ios::app);
+    if (rec.is_open())
+    {
+       rec << "Cabbage_Pie" << " 15 Rub"<< endl;
+    }
+    else
+        cout << "error";
+            }
+            if (a == 4){
+    ofstream rec;
+    rec.open("C:\\Prov\\Order.txt", ios::app);
+    if (rec.is_open())
+    {
+       rec << "Pie_With_Filling_Rice_Egg " << " 10 Rub"<< endl;
+    }
+    else
+        cout << "error";
+            }
+            goto tochka2;
+            break;
+        }
+            case 3:
+            system("cls");
+        {
+            ifstream in("C:\\BekkerFinal\\Drink.txt"); // окрываем файл для чтения
+            if (in.is_open())
+            {
+            while (getline(in, line))
+            {
+            cout << line << endl;
+            }
+            }
+            else {
+            cout << "error";
+            }
+            in.close(); // закрываем файл
+            cout << "Choice: ";
+            cin >> (a);
+            if (a == 1){
+    ofstream rec;
+    rec.open("C:\\Prov\\Order.txt", ios::app);
+    if (rec.is_open())
+    {
+       rec << "Tea" << " 15 Rub"<< endl;
+    }
+    else
+        cout << "error";
+            }
+            if (a == 2){
+    ofstream rec;
+    rec.open("C:\\Prov\\Order.txt", ios::app);
+    if (rec.is_open())
+    {
+       rec << "Coffee" << " 35 Rub"<< endl;
+    }
+    else
+        cout << "error";
+            }
+            if (a == 3){
+    ofstream rec;
+    rec.open("C:\\Prov\\Order.txt", ios::app);
+    if (rec.is_open())
+    {
+       rec << "Coca-Cola" << " 80 Rub"<< endl;
+    }
+    else
+        cout << "error";
+            }
+            if (a == 4){
+    ofstream rec;
+    rec.open("C:\\Prov\\Order.txt", ios::app);
+    if (rec.is_open())
+    {
+       rec << "Fanta" << " 75 Rub"<< endl;
+    }
+    else
+        cout << "error";
+            }
+            if (a == 5){
+    ofstream rec;
+    rec.open("C:\\Prov\\Order.txt", ios::app);
+    if (rec.is_open())
+    {
+       rec << "Sprite" << " 70 Rub"<< endl;
+    }
+    else
+        cout << "error";
+            }
+            goto tochka2;
+            break;
+        }
+        case 4:
+            goto tochka;
+        }
+        system("pause");
+        system("cls");
     case 2:
         //Работа с файлами
         break;
     case 3:
-    //Автоматический подсчет суммы
+        system ("cls");
+    {
+        ifstream out("C:\\Prov\\Order.txt");
+        if (out.is_open()){
+        while (getline(out,line)){
+        cout << line << endl;
+        }
+        }
+        out.close();
+        string s1,tail;
+        int s2 = 0;
+        int sum = 0;
+        ifstream out1("C:\\Prov\\Order.txt");
+        if (out1.is_open()){
+        while(out1>>s1>>s2)// в s1 - первое слово, в s2 - второе
+        {
+            s2 = s2;
+            getline(out1,tail); // дочитываем остаток строки
+            sum += s2;
+
+        }
+        cout <<"Result: " <<sum << endl;
+        }
+        else
+           cout << "error";
+        out.close();
+        system("pause");
+        goto tochka;
         break;
+    }
     case 4:
     {
         system("cls");
@@ -57,7 +277,7 @@ void Casir::CasirMenu(){
         theUserInterface.interact();
     }
 }
- }
+}
 
 void Boss::BossMenu(){
     string line;
