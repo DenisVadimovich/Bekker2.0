@@ -4,13 +4,17 @@
 #include <string>
 #include "interface.h"
 #include "class.h"
+#include <sstream>
 
 using namespace std;
 int Auth(){
     string Login;
     string Password;
     int chs;
+    std::stringstream* L = new stringstream[100];
+    std::stringstream* P = new stringstream[100];
 
+    //errorPoint:
     system("cls");
     cout << "Login: " << endl;
     cin >> Login;
@@ -62,6 +66,7 @@ int Auth(){
                 Casir CasirM;
                 CasirM.CasirMenu();
     }
+
     if (Login == "Boss" && Password == "wallet")
     {
         system("cls");
@@ -76,6 +81,15 @@ int Auth(){
                 Admin AdminM;
                 AdminM.AdminMenu();
     }
-    return 0;
+    if (L && P)
+    {
+        system("cls");
+        cout << "Wrong login or password!!!" << endl
+             << "Preess any button to get back to autorisation menu" << endl;
+        system("pause");
+        delete L, P;
+        Auth();
+    }
+      return 0;
 }
 

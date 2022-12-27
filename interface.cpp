@@ -1,8 +1,8 @@
-﻿//Файл landlord.cpp содержит все определения методов
-#include <iostream>
+﻿#include <iostream>
 #include "interface.h"
 #include "func.h"
 #include "class.h"
+#include "exit.h"
 UserInterface::UserInterface()
 {
 
@@ -20,18 +20,20 @@ cout << "for authorization press 'a' \n"
 << "for exit press 'q': \n";
 cin >> ch;
 switch (ch)
-{
-case 'a':
+    {
+    case 'a':
     system("cls");
-Auth();
-break;
+    Auth();
+    break;
 
-case 'q':
-cout << "press any key to exit";
-return;
-break;
+    case 'q':
+    pExit();
+    cout << "press any key to exit";
+    return;
+    break;
 
-default: cout << "Unknown function\n";
-break;
-}
+    default: cout << "Unknown function\n";
+    break;
+    }
+
 }

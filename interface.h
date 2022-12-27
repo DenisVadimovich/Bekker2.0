@@ -1,3 +1,5 @@
+#ifndef UPDATE_H
+#define UPDATE_H
 #include <iostream>
 using namespace std;
 class UserInterface
@@ -9,4 +11,4 @@ UserInterface();
 ~UserInterface();
 void interact();
 };
-
+#endif

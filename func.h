@@ -5,5 +5,7 @@
 int Auth();
 void Check();
 
+
+
 #endif // FUNC
 

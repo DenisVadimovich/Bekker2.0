@@ -5,9 +5,10 @@ CONFIG -= qt
 
 SOURCES += \
     interface.cpp \
-    bekkerapp.cpp \
     function.cpp \
-    class.cpp
+    class.cpp \
+    bekkerapp.cpp \
+    exit.cpp
 
 include(deployment.pri)
 qtcAddDeployment()
@@ -15,5 +16,6 @@ qtcAddDeployment()
 HEADERS += \
     interface.h \
     func.h \
-    class.h
+    class.h \
+    exit.h
 

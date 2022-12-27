@@ -59,7 +59,9 @@ void Casir::CasirMenu(){
             }
             }
             else {
-            cout << "error";
+            cout << "Error! Press any button to get back to menu. " << endl;
+            system ("pause");
+            goto tochka2;
             }
             in.close(); // закрываем файл
             cout << "Choice: ";
@@ -72,7 +74,9 @@ void Casir::CasirMenu(){
        rec << "Snickers_Cake" << " 212 Rub"<< endl;
     }
     else
-        cout << "error";
+        cout << "Error! Press any button to get back to menu. " << endl;
+        system ("pause");
+        goto tochka2;
             }
 
             if (a == 2){
@@ -83,7 +87,9 @@ void Casir::CasirMenu(){
        rec << "Napoleon_Cake" << " 240 Rub"<< endl;
     }
     else
-        cout << "error";
+        cout << "Error! Press any button to get back to menu. " << endl;
+        system ("pause");
+        goto tochka2;
             }
 
             if (a == 3){
@@ -94,7 +100,9 @@ void Casir::CasirMenu(){
        rec << "Cheese_Cake" << " 570 Rub"<< endl;
     }
     else
-        cout << "error";
+        cout << "Error! Press any button to get back to menu. " << endl;
+        system ("pause");
+        goto tochka2;
             }
 
             if (a == 4){
@@ -105,7 +113,9 @@ void Casir::CasirMenu(){
        rec << "Sour_Cream_Cake" << " 164 Rub"<< endl;
     }
     else
-        cout << "error";
+        cout << "Error! Press any button to get back to menu. " << endl;
+        system ("pause");
+        goto tochka2;
             }
             goto tochka2;
             break;
@@ -123,7 +133,9 @@ void Casir::CasirMenu(){
             }
             }
             else {
-            cout << "error";
+                cout << "Error! Press any button to get back to menu. " << endl;
+                system ("pause");
+                goto tochka2;
             }
             in.close(); // закрываем файл
             cout << "Choice: ";
@@ -136,7 +148,9 @@ void Casir::CasirMenu(){
        rec << "Sausage_In_The_Dough" << " 40 Rub"<< endl;
     }
     else
-        cout << "error";
+        cout << "Error! Press any button to get back to menu. " << endl;
+        system ("pause");
+        goto tochka2;
             }
 
             if (a == 2){
@@ -147,7 +161,9 @@ void Casir::CasirMenu(){
        rec << "Pizza_Application" << " 25 Rub"<< endl;
     }
     else
-        cout << "error";
+        cout << "Error! Press any button to get back to menu. " << endl;
+        system ("pause");
+        goto tochka2;
             }
 
             if (a == 3){
@@ -158,7 +174,9 @@ void Casir::CasirMenu(){
        rec << "Cabbage_Pie" << " 15 Rub"<< endl;
     }
     else
-        cout << "error";
+        cout << "Error! Press any button to get back to menu. " << endl;
+        system ("pause");
+        goto tochka2;
             }
 
             if (a == 4){
@@ -169,7 +187,9 @@ void Casir::CasirMenu(){
        rec << "Pie_With_Filling_Rice_Egg " << " 10 Rub"<< endl;
     }
     else
-        cout << "error";
+        cout << "Error! Press any button to get back to menu. " << endl;
+        system ("pause");
+        goto tochka2;
             }
             goto tochka2;
             break;
@@ -187,7 +207,9 @@ void Casir::CasirMenu(){
             }
             }
             else {
-            cout << "error";
+                cout << "Error! Press any button to get back to menu. " << endl;
+                system ("pause");
+                goto tochka2;
             }
             in.close(); // закрываем файл
             cout << "Choice: ";
@@ -200,7 +222,9 @@ void Casir::CasirMenu(){
        rec << "Tea" << " 15 Rub"<< endl;
     }
     else
-        cout << "error";
+        cout << "Error! Press any button to get back to menu. " << endl;
+        system ("pause");
+        goto tochka2;
             }
             if (a == 2){
     ofstream rec;
@@ -210,7 +234,9 @@ void Casir::CasirMenu(){
        rec << "Coffee" << " 35 Rub"<< endl;
     }
     else
-        cout << "error";
+        cout << "Error! Press any button to get back to menu. " << endl;
+        system ("pause");
+        goto tochka2;
             }
             if (a == 3){
     ofstream rec;
@@ -220,7 +246,9 @@ void Casir::CasirMenu(){
        rec << "Coca-Cola" << " 80 Rub"<< endl;
     }
     else
-        cout << "error";
+        cout << "Error! Press any button to get back to menu. " << endl;
+        system ("pause");
+        goto tochka2;
             }
             if (a == 4){
     ofstream rec;
@@ -230,7 +258,9 @@ void Casir::CasirMenu(){
        rec << "Fanta" << " 75 Rub"<< endl;
     }
     else
-        cout << "error";
+        cout << "Error! Press any button to get back to menu. " << endl;
+        system ("pause");
+        goto tochka2;
             }
             if (a == 5){
     ofstream rec;
@@ -240,7 +270,9 @@ void Casir::CasirMenu(){
        rec << "Sprite" << " 70 Rub"<< endl;
     }
     else
-        cout << "error";
+        cout << "Error! Press any button to get back to menu. " << endl;
+        system ("pause");
+        goto tochka2;
             }
             goto tochka2;
             break;
@@ -309,7 +341,9 @@ void Casir::CasirMenu(){
         cout <<"Result: " <<sum << endl;
         }
         else
-           cout << "error";
+            cout << "Error! Press any button to get back to menu. " << endl;
+            system ("pause");
+            goto tochka;
         out.close();
         system("pause");
         goto tochka;
@@ -320,6 +354,8 @@ void Casir::CasirMenu(){
         system("cls");
         UserInterface theUserInterface;
         theUserInterface.interact();
+        /*UserInterface* mainP;
+        mainP->interact();*/
     }
 }
 }
