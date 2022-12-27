@@ -251,8 +251,39 @@ void Casir::CasirMenu(){
         system("pause");
         system("cls");
     case 2:
-        //Работа с файлами
+    {
+        system("cls");
+        cout << "Delete product:"<< endl;
+        ifstream in("C:\\Prov\\Order.txt"); // окрываем файл для чтения
+        if (in.is_open())
+        {
+        while (getline(in, line))
+        {
+        cout << line << endl;
+        }
+        }
+        cout << "" << endl;
+        cout << "Choose main item:" << endl;
+        cout << "1. Delete all order" << endl;
+        cout << "2. Exit" << endl;
+
+        cout << "Choice: ";
+        cin >> Choice;
+        switch(Choice){
+              case 1:{
+            ofstream outfile;
+            outfile.open("C:\\Prov\\Order.txt", ofstream::out | ofstream::trunc);
+            outfile.close();
+
+        }
+
+              case 2:{
+                goto tochka;
+        }
+        }
+
         break;
+    }
     case 3:
         system ("cls");
     {
