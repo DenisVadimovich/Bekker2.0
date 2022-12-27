@@ -12,10 +12,11 @@ class Boss{
 public:
     Boss();
     ~Boss();
-    int Choice;
-    int Choice1;
     char kbtn;
     void BossMenu();
+private:
+    int Choice;
+    int Choice2;
 };
 class Admin{
 public:

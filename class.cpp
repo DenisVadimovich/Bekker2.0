@@ -50,7 +50,7 @@ void Casir::CasirMenu(){
             case 1:
             system("cls");
         {
-            ifstream in("C:\\BekkerFinal\\Cake.txt"); // окрываем файл для чтения
+            ifstream in("Cake.txt"); // окрываем файл для чтения
             if (in.is_open())
             {
             while (getline(in, line))
@@ -66,7 +66,7 @@ void Casir::CasirMenu(){
             cin >> (a);
             if (a == 1){
     ofstream rec;
-    rec.open("C:\\Prov\\Order.txt", ios::app);
+    rec.open("Order.txt", ios::app);
     if (rec.is_open())
     {
        rec << "Snickers_Cake" << " 212 Rub"<< endl;
@@ -77,7 +77,7 @@ void Casir::CasirMenu(){
 
             if (a == 2){
     ofstream rec;
-    rec.open("C:\\Prov\\Order.txt", ios::app);
+    rec.open("Order.txt", ios::app);
     if (rec.is_open())
     {
        rec << "Napoleon_Cake" << " 240 Rub"<< endl;
@@ -88,7 +88,7 @@ void Casir::CasirMenu(){
 
             if (a == 3){
     ofstream rec;
-    rec.open("C:\\Prov\\Order.txt", ios::app);
+    rec.open("Order.txt", ios::app);
     if (rec.is_open())
     {
        rec << "Cheese_Cake" << " 570 Rub"<< endl;
@@ -99,7 +99,7 @@ void Casir::CasirMenu(){
 
             if (a == 4){
     ofstream rec;
-    rec.open("C:\\Prov\\Order.txt", ios::app);
+    rec.open("Order.txt", ios::app);
     if (rec.is_open())
     {
        rec << "Sour_Cream_Cake" << " 164 Rub"<< endl;
@@ -114,7 +114,7 @@ void Casir::CasirMenu(){
             case 2:
             system("cls");
         {
-            ifstream in("C:\\BekkerFinal\\Bun.txt"); // окрываем файл для чтения
+            ifstream in("Bun.txt"); // окрываем файл для чтения
             if (in.is_open())
             {
             while (getline(in, line))
@@ -130,7 +130,7 @@ void Casir::CasirMenu(){
             cin >> (a);
             if (a == 1){
     ofstream rec;
-    rec.open("C:\\Prov\\Order.txt", ios::app);
+    rec.open("Order.txt", ios::app);
     if (rec.is_open())
     {
        rec << "Sausage_In_The_Dough" << " 40 Rub"<< endl;
@@ -141,7 +141,7 @@ void Casir::CasirMenu(){
 
             if (a == 2){
     ofstream rec;
-    rec.open("C:\\Prov\\Order.txt", ios::app);
+    rec.open("Order.txt", ios::app);
     if (rec.is_open())
     {
        rec << "Pizza_Application" << " 25 Rub"<< endl;
@@ -152,7 +152,7 @@ void Casir::CasirMenu(){
 
             if (a == 3){
     ofstream rec;
-    rec.open("C:\\Prov\\Order.txt", ios::app);
+    rec.open("Order.txt", ios::app);
     if (rec.is_open())
     {
        rec << "Cabbage_Pie" << " 15 Rub"<< endl;
@@ -163,7 +163,7 @@ void Casir::CasirMenu(){
 
             if (a == 4){
     ofstream rec;
-    rec.open("C:\\Prov\\Order.txt", ios::app);
+    rec.open("Order.txt", ios::app);
     if (rec.is_open())
     {
        rec << "Pie_With_Filling_Rice_Egg " << " 10 Rub"<< endl;
@@ -178,7 +178,7 @@ void Casir::CasirMenu(){
             case 3:
             system("cls");
         {
-            ifstream in("C:\\BekkerFinal\\Drink.txt"); // окрываем файл для чтения
+            ifstream in("Drink.txt"); // окрываем файл для чтения
             if (in.is_open())
             {
             while (getline(in, line))
@@ -194,7 +194,7 @@ void Casir::CasirMenu(){
             cin >> (a);
             if (a == 1){
     ofstream rec;
-    rec.open("C:\\Prov\\Order.txt", ios::app);
+    rec.open("Order.txt", ios::app);
     if (rec.is_open())
     {
        rec << "Tea" << " 15 Rub"<< endl;
@@ -204,7 +204,7 @@ void Casir::CasirMenu(){
             }
             if (a == 2){
     ofstream rec;
-    rec.open("C:\\Prov\\Order.txt", ios::app);
+    rec.open("Order.txt", ios::app);
     if (rec.is_open())
     {
        rec << "Coffee" << " 35 Rub"<< endl;
@@ -214,7 +214,7 @@ void Casir::CasirMenu(){
             }
             if (a == 3){
     ofstream rec;
-    rec.open("C:\\Prov\\Order.txt", ios::app);
+    rec.open("Order.txt", ios::app);
     if (rec.is_open())
     {
        rec << "Coca-Cola" << " 80 Rub"<< endl;
@@ -224,7 +224,7 @@ void Casir::CasirMenu(){
             }
             if (a == 4){
     ofstream rec;
-    rec.open("C:\\Prov\\Order.txt", ios::app);
+    rec.open("Order.txt", ios::app);
     if (rec.is_open())
     {
        rec << "Fanta" << " 75 Rub"<< endl;
@@ -234,7 +234,7 @@ void Casir::CasirMenu(){
             }
             if (a == 5){
     ofstream rec;
-    rec.open("C:\\Prov\\Order.txt", ios::app);
+    rec.open("Order.txt", ios::app);
     if (rec.is_open())
     {
        rec << "Sprite" << " 70 Rub"<< endl;
@@ -254,7 +254,7 @@ void Casir::CasirMenu(){
     {
         system("cls");
         cout << "Delete product:"<< endl;
-        ifstream in("C:\\Prov\\Order.txt"); // окрываем файл для чтения
+        ifstream in("Order.txt"); // окрываем файл для чтения
         if (in.is_open())
         {
         while (getline(in, line))
@@ -272,7 +272,7 @@ void Casir::CasirMenu(){
         switch(Choice){
               case 1:{
             ofstream outfile;
-            outfile.open("C:\\Prov\\Order.txt", ofstream::out | ofstream::trunc);
+            outfile.open("Order.txt", ofstream::out | ofstream::trunc);
             outfile.close();
 
         }
@@ -287,7 +287,7 @@ void Casir::CasirMenu(){
     case 3:
         system ("cls");
     {
-        ifstream out("C:\\Prov\\Order.txt");
+        ifstream out("Order.txt");
         if (out.is_open()){
         while (getline(out,line)){
         cout << line << endl;
@@ -297,7 +297,7 @@ void Casir::CasirMenu(){
         string s1,tail;
         int s2 = 0;
         int sum = 0;
-        ifstream out1("C:\\Prov\\Order.txt");
+        ifstream out1("Order.txt");
         if (out1.is_open()){
         while(out1>>s1>>s2)// в s1 - первое слово, в s2 - второе
         {
@@ -326,6 +326,12 @@ void Casir::CasirMenu(){
 
 void Boss::BossMenu(){
     string line;
+    string s1 = "",
+           tail = "";
+    int s2 = 0;
+    int sum = 0;
+    int tax = 0;
+    int sum2 = 0;
     mainmenu:
     cout << "Sales Menu" << endl;
     cout << "1. Today buyings" << endl;
@@ -336,9 +342,34 @@ void Boss::BossMenu(){
     cin >> Choice;
     switch (Choice){
     case 1:
-        //Вывести покупки
+    {
+        system("cls");
+        cout << "Today buyings(27.12.2022)" << endl;
+        ifstream out("Order.txt");
+        if (out.is_open()){
+        while (getline(out,line)){
+        cout << line << endl;
+        }
+        }
+        out.close();
+        ifstream out1("Order.txt");
+        if (out1.is_open()){
+        while(out1>>s1>>s2)// в s1 - первое слово, в s2 - второе
+        {
+            s2 = s2;
+            getline(out1,tail); // дочитываем остаток строки
+            sum += s2;
+
+        }
+        cout <<"Result: " <<sum << endl;
+        }
+        system("pause");
+        system("cls");
+        goto mainmenu;
         break;
+    }
     case 2:
+    {
         system("cls");
         prev:
         cout << "Orders menu" << endl;
@@ -346,11 +377,11 @@ void Boss::BossMenu(){
         cout << "2. Edit orders" << endl;
         cout << "3. Exit to main menu" << endl;
         cout << "Choice: ";
-        cin >> Choice1;
-        switch(Choice1){
+        cin >> Choice2;
+        switch(Choice2){
             case 1:
         {
-                ifstream in("D:/test/orders.txt"); // окрываем файл для чтения
+                ifstream in("Storage Orders.txt"); // окрываем файл для чтения
                 if (in.is_open())
                 {
                     system("cls");
@@ -358,38 +389,116 @@ void Boss::BossMenu(){
                     {
                         cout << line << endl;
                     }
-                    cout << "\n" << "\n" <<"\n" << "Type q for exit";
-                    cin >> kbtn;
-                    switch (kbtn)
-                    {
-                    case 'q':
-                    {
-                        system("cls");
-                        Choice1 = 0;
-                        goto prev;
-                    }
-                    }
                 }
                 else {
                     cout << "error no such file";
                 }
+                system("pause");
+                system("cls");
+                goto prev;
                 in.close();     // закрываем файл
                 break;
         }
 
-            case 2:
+        case 2:
+        {
+            retry:
+            char kb;
+            ifstream in("Storage Orders.txt"); // окрываем файл для чтения
+            if (in.is_open())
+            {
+                system("cls");
+                while (getline(in, line))
+                {
+                    cout << line << endl;
+                }
+            }
+            else {
+                cout << "error no such file";
+            }
+            cout << endl << "press d for delete or q for escape" << endl;
+            cin >> kb;
+            in.close();
+            if (kb == 'd')
+            {
+                ifstream in("Storage Orders.txt");
+                cout <<"Type number for delete :"<< endl;
+                  int i_number_line_delete = 0; //для хранения номера строки который нужно удалить
+                  cin >> i_number_line_delete;
+
+                  int i_number_line_now = 0; //счётчик строк
+                  string line_first; //для хранения строки
+                  string line_file_text; //для хранения текста файла
+
+                 while(getline(in,line_first))
+                 {
+                   i_number_line_now++;
+
+                   if(i_number_line_now != i_number_line_delete){
+                   line_file_text.insert(line_file_text.size(),line_first);
+                   line_file_text.insert(line_file_text.size(), "\n");
+                   }
+                 }
+            in.close();
+            ofstream file_out;
+
+             file_out.open ("Storage Orders.txt",std::ios::trunc | std::ios::binary); //открыть и обрезать
+
+             //записать
+
+             file_out.write(line_file_text.c_str(), line_file_text.size());
+             file_out.clear();
+             system("pause");
+             goto retry;
+            }
+            else if (kb == 'q')
+            {
+            system("cls");
+            goto prev;
+            }
+            else
+            {
+                cout << "Wrong parameter!!";
+                goto retry;
+            }
+            in.close();     // закрываем файл
             break;
+        }
 
             case 3:
+        {
             system("cls");
             Choice = 0;
             goto mainmenu;
             break;
-
+            }
+              default: cout << "Wrong parameter!!";
         }
-    case 3:
-    //Автоматический подсчет прибыли и налогов
         break;
+    }
+    case 3:
+    {
+        system("cls");
+        cout << "There's Income and Taxes of our company" << endl;
+        cout <<"Income without taxes: " <<sum << endl;
+        cout <<"Taxes(6%): " <<tax << endl;
+        cout <<"Income: " <<sum2 << endl;
+        ifstream out1("Order.txt");
+        if (out1.is_open()){
+        while(out1>>s1>>s2)// в s1 - первое слово, в s2 - второе
+        {
+            s2 = s2;
+            getline(out1,tail); // дочитываем остаток строки
+            sum += s2;
+        }
+        tax = sum * 0.06;
+        sum2 = sum - tax;
+        }
+        system("pause");
+        system("cls");
+        goto mainmenu;
+        break;
+    }
     case 4:
     {
         system("cls");
