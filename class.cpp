@@ -17,6 +17,12 @@ Boss::Boss(){
 Boss::~Boss(){
 
 }
+Admin::Admin(){
+
+}
+Admin::~Admin(){
+
+}
 void Casir::CasirMenu(){
     string line;
      int a;
@@ -68,6 +74,7 @@ void Casir::CasirMenu(){
     else
         cout << "error";
             }
+
             if (a == 2){
     ofstream rec;
     rec.open("C:\\Prov\\Order.txt", ios::app);
@@ -78,6 +85,7 @@ void Casir::CasirMenu(){
     else
         cout << "error";
             }
+
             if (a == 3){
     ofstream rec;
     rec.open("C:\\Prov\\Order.txt", ios::app);
@@ -88,6 +96,7 @@ void Casir::CasirMenu(){
     else
         cout << "error";
             }
+
             if (a == 4){
     ofstream rec;
     rec.open("C:\\Prov\\Order.txt", ios::app);
@@ -101,6 +110,7 @@ void Casir::CasirMenu(){
             goto tochka2;
             break;
         }
+
             case 2:
             system("cls");
         {
@@ -128,6 +138,7 @@ void Casir::CasirMenu(){
     else
         cout << "error";
             }
+
             if (a == 2){
     ofstream rec;
     rec.open("C:\\Prov\\Order.txt", ios::app);
@@ -138,6 +149,7 @@ void Casir::CasirMenu(){
     else
         cout << "error";
             }
+
             if (a == 3){
     ofstream rec;
     rec.open("C:\\Prov\\Order.txt", ios::app);
@@ -148,6 +160,7 @@ void Casir::CasirMenu(){
     else
         cout << "error";
             }
+
             if (a == 4){
     ofstream rec;
     rec.open("C:\\Prov\\Order.txt", ios::app);
@@ -161,6 +174,7 @@ void Casir::CasirMenu(){
             goto tochka2;
             break;
         }
+
             case 3:
             system("cls");
         {
@@ -355,4 +369,7 @@ void Boss::BossMenu(){
         cout << "Wrong parameter!";
             break;
     }
+}
+void Admin::AdminMenu(){
+    cout << "In coming..." << endl;
 }

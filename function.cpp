@@ -8,28 +8,23 @@
 using namespace std;
 int Auth(){
     string Login;
-    int Password;
+    string Password;
     int chs;
+
+    system("cls");
     cout << "Login: " << endl;
     cin >> Login;
     cout << "Password: " << endl;
     cin >> Password;
-/*
-    ifstream file ("C:\\Prov\\Proverka\\Check.txt");
-
-        file.is_open(); // вызов метода is_open()
-            while(file.get(s)){
-
-            }
-}
-void Check(){
-*/
-    if (Login == "admin" && Password == 123)
+    if (Login == "Administrator" && Password == "Administrator")
     {
         system ("cls");
         cout << "Hello Admin: Choose profile" << "\n"
              << "1. Cassir" << "\n"
-             << "2. Boss" << "\n";
+             << "2. Boss" << "\n"
+             << "3. Admin" << "\n"
+             << "4. Logout" << endl;
+        cout << "Choise: ";
         cin >> chs;
         switch(chs){
         case 1:
@@ -46,7 +41,40 @@ void Check(){
             BossM.BossMenu();
             break;
         }
+        case 3:{
+            system("cls");
+            Admin AdminM;
+            AdminM.AdminMenu();
+            break;
+           }
+        case 4:
+        {
+            system("cls");
+            UserInterface theUserInterface;
+            theUserInterface.interact();
         }
+        }
+    }
+    if (Login == "Casir" && Password == "cash")
+    {
+        system("cls");
+        cout << "Profile: Casir, select menu item..." << endl;
+                Casir CasirM;
+                CasirM.CasirMenu();
+    }
+    if (Login == "Boss" && Password == "wallet")
+    {
+        system("cls");
+        cout << "Profile: Boss, select menu item..." << endl;
+                Boss BossM;
+                BossM.BossMenu();
+    }
+    if (Login == "Admin" && Password == "admin")
+    {
+        system("cls");
+        cout << "Profile: Admin, select menu item..." << endl;
+                Admin AdminM;
+                AdminM.AdminMenu();
     }
     return 0;
 }

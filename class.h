@@ -17,6 +17,13 @@ public:
     char kbtn;
     void BossMenu();
 };
+class Admin{
+public:
+    Admin();
+    ~Admin();
+    int Choice;
+    void AdminMenu();
+};
 
 #endif // CLASS
 
