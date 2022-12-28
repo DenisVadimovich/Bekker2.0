@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include "interface.h"
+#include "func.h"
 
 using namespace std;
 
@@ -547,5 +548,39 @@ void Boss::BossMenu(){
     }
 }
 void Admin::AdminMenu(){
-    cout << "In coming..." << endl;
+
+    int _size = 0;
+    Data* d = new Data[_size];
+
+    int choice;
+    admmenu:
+    cout << "Administrator menu" << endl;
+    cout << "1. Create a list to order" << endl;
+    cout << "2. Check data" << endl;
+    /*cout << "3. Final receipt" << endl;
+    cout << "4. Logout" << endl;*/
+    cout << "Choice: " << endl;
+    cin >> choice;
+    switch(choice){
+    case 1:
+    {   system ("cls");
+        DataEntry(d, _size);
+        system("pause");
+        system("cls");
+        goto admmenu;
+        break;
+    }
+    case 2:
+    {
+        system("cls");
+        if (_size !=0)
+            Print(d, _size);
+        else
+            cout << "Data is empty!" << endl;
+        system("pause");
+        system("cls");
+        goto admmenu;
+        break;
+    }
+   } // switch
 }

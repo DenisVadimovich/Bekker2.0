@@ -37,3 +37,39 @@ switch (ch)
     }
 
 }
+Data::Data()
+{}
+Data::~Data()
+{}
+Data::Data(productOrder productorder_, Info info_)
+{
+    productorder.productType = productorder_.productType;
+    productorder.productName   = productorder_.productName;
+
+    info.numbers = info_.numbers;
+    info.price = info_.price;
+    info.fullPrice = info_.fullPrice;
+}
+void Data::DataEntry(productOrder productorder_, Info info_)
+{
+    productorder.productType = productorder_.productType;
+    productorder.productName   = productorder_.productName;
+
+    info.numbers = info_.numbers;
+    info.price = info_.price;
+    info.fullPrice = info_.fullPrice;
+}
+void Data::Print()
+{
+    cout << "Product Type: "
+         << productorder.productType << endl
+         << "Product Name: "
+         << productorder.productName << endl
+         << "Amount: "
+         << info.numbers << endl
+         << "Price: "
+         << info.price << endl
+         << "FullPrice: "
+         << info.fullPrice << endl
+         <<"_____________________________________________" << endl;
+}

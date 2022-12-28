@@ -1,5 +1,13 @@
 #ifndef CLASS
 #define CLASS
+
+#include<iostream>
+#include<string>
+#include<fstream>
+#include<windows.h>
+
+using namespace std;
+
 class Casir{
 public:
     Casir();
@@ -18,6 +26,7 @@ private:
     int Choice;
     int Choice2;
 };
+
 class Admin{
 public:
     Admin();
@@ -25,6 +34,10 @@ public:
     int Choice;
     void AdminMenu();
 };
+
+// Класс для объектов при работе Администратора с созданием заявки
+// ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+// vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
 #endif // CLASS
 

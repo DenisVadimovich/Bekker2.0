@@ -11,4 +11,34 @@ UserInterface();
 ~UserInterface();
 void interact();
 };
+struct productOrder
+{
+    string productType, productName;
+};
+
+struct Info
+{
+    double numbers, price, fullPrice;
+};
+
+class Data
+{
+ private:
+    productOrder productorder;
+    Info info;
+
+ public:
+    Data();
+    Data(productOrder productorder_, Info info_);
+    ~Data();
+
+    void Print();
+    void DataEntry(productOrder productorder_, Info info_);
+
+    productOrder GetproductOrder() {return productorder;}
+    Info GetInfo() {return info;}
+
+
+    Data& operator = (Data d_0);
+};
 #endif
