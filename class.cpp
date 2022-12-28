@@ -557,8 +557,8 @@ void Admin::AdminMenu(){
     cout << "Administrator menu" << endl;
     cout << "1. Create a list to order" << endl;
     cout << "2. Check data" << endl;
-    /*cout << "3. Final receipt" << endl;
-    cout << "4. Logout" << endl;*/
+    cout << "3. Save data" << endl;
+    cout << "4. Logout" << endl;
     cout << "Choice: " << endl;
     cin >> choice;
     switch(choice){
@@ -582,5 +582,23 @@ void Admin::AdminMenu(){
         goto admmenu;
         break;
     }
+   case 3:
+   {
+        system("cls");
+        if (_size !=0 )
+        SaveData(d, _size);
+        else
+            cout << "Data is empty!" << endl;
+        system("pause");
+        system("cls");
+        goto admmenu;
+        break;
+   }
+   case 4:
+   {
+        system("cls");
+        UserInterface theUserInterface;
+        theUserInterface.interact();
+   }
    } // switch
 }

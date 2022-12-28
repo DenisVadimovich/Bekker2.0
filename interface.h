@@ -18,7 +18,7 @@ struct productOrder
 
 struct Info
 {
-    double numbers, price, fullPrice;
+    double numbers, price, fullPrice, datafullPrice;
 };
 
 class Data
@@ -35,8 +35,9 @@ class Data
     void Print();
     void DataEntry(productOrder productorder_, Info info_);
 
-    productOrder GetproductOrder() {return productorder;}
+    productOrder GetProductOrder() {return productorder;}
     Info GetInfo() {return info;}
+
 
 
     Data& operator = (Data d_0);

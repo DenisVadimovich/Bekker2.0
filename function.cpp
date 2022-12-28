@@ -374,4 +374,35 @@ void Print(Data* d, int n)
         d[i].Print();
     }
 }
+void SaveData(Data* d, int n)
+{
+    ofstream record("OrderList.txt", ios_base::app);
+    if (record)
+    {
+        record  << n << endl;
 
+        for (int i = 0; i < n; i++)
+        {
+
+
+                           record << "Product Type: "
+                           << d[i].GetProductOrder().productType << endl
+                           << "Product Name: "
+                           << d[i].GetProductOrder().productName << endl
+                           << "Amount: "
+                           << d[i].GetInfo().numbers << endl
+                           << "Price: "
+                           << d[i].GetInfo().price << endl
+                           << "FullPrice: "
+                           << d[i].GetInfo().fullPrice << endl
+                           <<"_____________________________________________" << endl;
+            if (i < n-1)
+                    record << endl;
+
+        }
+    }
+    else
+    cout << "Error to open a file!" << endl;
+    //cout << "Данные сохранены в файл: " << fileName << endl;
+    record.close();
+}
