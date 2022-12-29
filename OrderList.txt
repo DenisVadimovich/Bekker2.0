@@ -1,0 +1,35 @@
+3
+Product Type: Bun
+Product Name: Pie with filling rice egg
+Amount: 15
+Price: 5
+FullPrice: 75
+_____________________________________________
+
+Product Type: Cake
+Product Name: Cheese cake
+Amount: 21
+Price: 14
+FullPrice: 294
+_____________________________________________
+
+Product Type: Bun
+Product Name: Coca-cola
+Amount: 100
+Price: 26
+FullPrice: 2600
+_____________________________________________
+1
+Product Type: Bun
+Product Name: Pizza application
+Amount: 18
+Price: 18
+FullPrice: 324
+_____________________________________________
+1
+Product Type: Bun
+Product Name: Coca-cola
+Amount: 11
+Price: 150
+FullPrice: 1650
+_____________________________________________

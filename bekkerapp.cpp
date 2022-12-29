@@ -1,11 +1,11 @@
-#include "interface.h"
-#include "func.h"
+#include "function.h"
 #include "class.h"
 
 int main()
 {
-setlocale(LC_ALL, "rus");
-UserInterface theUserInterface;
-theUserInterface.interact();
-return 0;
+    UserInterface theUserInterface;
+    theUserInterface.interact();
+    pExit();
+
+    return 0;
 }

@@ -2,18 +2,17 @@ TEMPLATE = app
 CONFIG += console
 CONFIG -= app_bundle
 CONFIG -= qt
+CONFIG += C++11
 
 SOURCES += \
-    interface.cpp \
-    bekkerapp.cpp \
     function.cpp \
-    class.cpp
+    class.cpp \
+    bekkerapp.cpp
 
 include(deployment.pri)
 qtcAddDeployment()
 
 HEADERS += \
-    interface.h \
-    func.h \
-    class.h
+    class.h \
+    function.h
 

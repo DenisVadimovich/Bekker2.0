@@ -1,0 +1,5 @@
+1. Tea 15 Rub
+2. Coffee 35 Rub
+3. Coca-cola 80 Rub
+4. Fanta 75 Rub
+5. Sprite 70 Rub
