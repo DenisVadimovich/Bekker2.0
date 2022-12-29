@@ -13,45 +13,6 @@ int Auth(){
     cin >> Login;
     cout << "Password: " << endl;
     cin >> Password;
-    if (Login == "Administrator" && Password == "Administrator")
-    {
-        system ("cls");
-        cout << "Hello Admin: Choose profile" << "\n"
-             << "1. Cassir" << "\n"
-             << "2. Boss" << "\n"
-             << "3. Admin" << "\n"
-             << "4. Logout" << endl;
-        cout << "Choise: ";
-        cin >> chs;
-        switch(chs){
-        case 1:
-        {
-            system("cls");
-            Casir CasirM;
-            CasirM.CasirMenu();
-            break;
-        }
-        case 2:
-        {
-            system("cls");
-            Boss BossM;
-            BossM.BossMenu();
-            break;
-        }
-        case 3:{
-            system("cls");
-            Admin AdminM;
-            AdminM.AdminMenu();
-            break;
-           }
-        case 4:
-        {
-            system("cls");
-            UserInterface theUserInterface;
-            theUserInterface.interact();
-        }
-        }
-    }
     if (Login == "Casir" && Password == "cash")
     {
         system("cls");
