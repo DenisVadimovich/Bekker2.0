@@ -1,21 +1,13 @@
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <sstream>
-#include "interface.h"
-#include "func.h"
+#include "function.h"
 #include "class.h"
 
 
-using namespace std;
 int Auth(){
     string Login;
     string Password;
     int chs;
     std::stringstream* L = new stringstream[100];
-    std::stringstream* P = new stringstream[100];
 
-    //errorPoint:
     system("cls");
     cout << "Login: " << endl;
     cin >> Login;
@@ -82,22 +74,24 @@ int Auth(){
                 Admin AdminM;
                 AdminM.AdminMenu();
     }
-    if (L && P)
+    if (L)
     {
         system("cls");
         cout << "Wrong login or password!!!" << endl
              << "Preess any button to get back to autorisation menu" << endl;
         system("pause");
-        delete L, P;
+        delete L;
         Auth();
     }
       return 0;
 }
 void DataEntry(Data* (&d), int& n)
 {
+
     int Choice;
     productOrder productorder;
     Info info;
+    string s;
 
     cout << "How many positions? ";
     cin >> n;
@@ -130,10 +124,10 @@ void DataEntry(Data* (&d), int& n)
                 productorder.productName = "Snickers cake";
                 cout << "U selected: " << productorder.productName<< endl
                      << "How many Snickers cakes u want to order?: ";
-                cin >> info.numbers;
+                info.numbers = Check(s);
                 system ("cls");
                 cout << "What is the price of one Snickers cakes? (RUB): ";
-                cin >> info.price;
+                info.price = Check(s);
                 info.fullPrice = info.numbers * info.price;
                 d[i].DataEntry(productorder, info);
                 system ("cls");
@@ -147,10 +141,10 @@ void DataEntry(Data* (&d), int& n)
                 productorder.productName = "Napoleon cake";
                 cout    << "U selected: " << productorder.productName<< endl
                         << "How many Napoleon cakes u want to order?: ";
-                cin >> info.numbers;
+                info.numbers = Check(s);
                 system ("cls");
                 cout << "What is the price of one Napoleon cakes? (RUB): ";
-                cin >> info.price;
+                info.price = Check(s);
                 info.fullPrice = info.numbers * info.price;
                 d[i].DataEntry(productorder, info);
                 system ("cls");
@@ -163,10 +157,10 @@ void DataEntry(Data* (&d), int& n)
                 productorder.productName = "Cheese cake";
                 cout    << "U selected: " << productorder.productName<< endl
                         << "How many Cheese cakes u want to order?: ";
-                cin >> info.numbers;
+                info.numbers = Check(s);
                 system ("cls");
                 cout << "What is the price of one Cheese cakees? (RUB): ";
-                cin >> info.price;
+                info.price = Check(s);
                 info.fullPrice = info.numbers * info.price;
                 d[i].DataEntry(productorder, info);
                 system ("cls");
@@ -179,10 +173,10 @@ void DataEntry(Data* (&d), int& n)
                 productorder.productName = "Sour cream cake";
                 cout    << "U selected: " << productorder.productName<< endl
                         << "How many Sour cream cakes u want to order?: ";
-                cin >> info.numbers;
+                info.numbers = Check(s);
                 system ("cls");
                 cout << "What is the price of one Sour cream cakes? (RUB): ";
-                cin >> info.price;
+                info.price = Check(s);
                 info.fullPrice = info.numbers * info.price;
                 d[i].DataEntry(productorder, info);
                 system ("cls");
@@ -209,10 +203,10 @@ void DataEntry(Data* (&d), int& n)
                 productorder.productName = "Sausage in the dough";
                 cout    << "U selected: " << productorder.productName<< endl
                         << "How many Sausages in the dough u want to order?: ";
-                cin >> info.numbers;
+                info.numbers = Check(s);
                 system ("cls");
                 cout << "What is the price of one Sausage in the dough? (RUB): ";
-                cin >> info.price;
+                info.price = Check(s);
                 info.fullPrice = info.numbers * info.price;
                 d[i].DataEntry(productorder, info);
                 system ("cls");
@@ -225,10 +219,10 @@ void DataEntry(Data* (&d), int& n)
                 productorder.productName = "Pizza application";
                 cout    << "U selected: " << productorder.productName<< endl
                         << "How many Pizza applications u want to order?: ";
-                cin >> info.numbers;
+                info.numbers = Check(s);
                 system ("cls");
                 cout << "What is the price of one Pizza application? (RUB): ";
-                cin >> info.price;
+                info.price = Check(s);
                 info.fullPrice = info.numbers * info.price;
                 d[i].DataEntry(productorder, info);
                 system ("cls");
@@ -241,10 +235,10 @@ void DataEntry(Data* (&d), int& n)
                 productorder.productName = "Cabbage pie";
                 cout    << "U selected: " << productorder.productName<< endl
                         << "How many Cabbage pie u want to order?: ";
-                cin >> info.numbers;
+                info.numbers = Check(s);
                 system ("cls");
                 cout << "What is the price of one Cabbage pies? (RUB): ";
-                cin >> info.price;
+                info.price = Check(s);
                 info.fullPrice = info.numbers * info.price;
                 d[i].DataEntry(productorder, info);
                 system ("cls");
@@ -257,10 +251,10 @@ void DataEntry(Data* (&d), int& n)
                 productorder.productName = "Pie with filling rice egg";
                 cout    << "U selected: " << productorder.productName<< endl
                         << "How many Pies with filling rice egg u want to order?: ";
-                cin >> info.numbers;
+                info.numbers = Check(s);
                 system ("cls");
                 cout << "What is the price of one Pie with filling rice egg? (RUB): ";
-                cin >> info.price;
+                info.price = Check(s);
                 info.fullPrice = info.numbers * info.price;
                 d[i].DataEntry(productorder, info);
                 system ("cls");
@@ -288,10 +282,10 @@ void DataEntry(Data* (&d), int& n)
                 productorder.productName = "Tea";
                 cout    << "U selected: " << productorder.productName<< endl
                         << "How many Tea packs u want to order?: ";
-                cin >> info.numbers;
+                info.numbers = Check(s);
                 system ("cls");
                 cout << "What is the price of one Tea pack? (RUB): ";
-                cin >> info.price;
+                info.price = Check(s);
                 info.fullPrice = info.numbers * info.price;
                 d[i].DataEntry(productorder, info);
                 system ("cls");
@@ -303,10 +297,10 @@ void DataEntry(Data* (&d), int& n)
                 productorder.productName = "Coffee";
                 cout    << "U selected: " << productorder.productName<< endl
                         << "How many Coffee packs u want to order?: ";
-                cin >> info.numbers;
+                info.numbers = Check(s);
                 system ("cls");
                 cout << "What is the price of one Coffee pack? (RUB): ";
-                cin >> info.price;
+                info.price = Check(s);
                 info.fullPrice = info.numbers * info.price;
                 d[i].DataEntry(productorder, info);
                 system ("cls");
@@ -318,10 +312,10 @@ void DataEntry(Data* (&d), int& n)
                 productorder.productName = "Coca-cola";
                 cout    << "U selected: " << productorder.productName<< endl
                         << "How many Coca-cola bottles u want to order?: ";
-                cin >> info.numbers;
+                info.numbers = Check(s);
                 system ("cls");
                 cout << "What is the price of one Coca-cola bottle? (RUB): ";
-                cin >> info.price;
+                info.price = Check(s);
                 info.fullPrice = info.numbers * info.price;
                 d[i].DataEntry(productorder, info);
                 system ("cls");
@@ -333,10 +327,10 @@ void DataEntry(Data* (&d), int& n)
                 productorder.productName = "Fanta";
                 cout    << "U selected: " << productorder.productName<< endl
                         << "How many Fanta bottles u want to order?: ";
-                cin >> info.numbers;
+                info.numbers = Check(s);
                 system ("cls");
                 cout << "What is the price of one Fanta bottle? (RUB): ";
-                cin >> info.price;
+                info.price = Check(s);
                 info.fullPrice = info.numbers * info.price;
                 d[i].DataEntry(productorder, info);
                 system ("cls");
@@ -348,10 +342,10 @@ void DataEntry(Data* (&d), int& n)
                 productorder.productName = "Sprite";
                 cout    << "U selected: " << productorder.productName<< endl
                         << "How many Sprite bottles u want to order?: ";
-                cin >> info.numbers;
+                info.numbers = Check(s);
                 system ("cls");
                 cout << "What is the price of one Sprite bottle? (RUB): ";
-                cin >> info.price;
+                info.price = Check(s);
                 info.fullPrice = info.numbers * info.price;
                 d[i].DataEntry(productorder, info);
                 system ("cls");
@@ -403,6 +397,27 @@ void SaveData(Data* d, int n)
     }
     else
     cout << "Error to open a file!" << endl;
-    //cout << "Данные сохранены в файл: " << fileName << endl;
     record.close();
 }
+double Check(std::string s){
+    double x;// переменная для ввода числовых данных
+    start:
+    cin >> s;
+    if (s.find_first_not_of("0123456789.") != string::npos)
+    {
+        system("cls");
+        cout << "Error!!! Put the 0123456789 OR ." << endl;
+        goto start;
+    }
+    else
+    {
+        x = stod(s); // вывод на экран введенного числа
+    }
+return x;
+}
+int pExit()
+{
+    cout << "Press any button to close the programm..." << endl;
+    exit(0);
+}
+
